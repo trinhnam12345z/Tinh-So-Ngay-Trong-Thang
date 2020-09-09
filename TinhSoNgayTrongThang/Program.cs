@@ -13,8 +13,14 @@ namespace TinhSoNgayTrongThang
             Console.Write("Nhap nam : ");
             string Snam = Console.ReadLine();
 
-            int th = int.Parse(Sthang);
-            int nm = int.Parse(Snam);
+            tinhNgayThang(Sthang,Snam);
+
+            Console.ReadLine();
+        }
+        static void tinhNgayThang(string a , string b)
+        {
+            int th = int.Parse(a);
+            int nm = int.Parse(b);
             int songay = 0;
 
             if (th >= 1 && th <= 12)
@@ -45,7 +51,6 @@ namespace TinhSoNgayTrongThang
             }
             else
                 Console.Write("=> Thang khong hop le!\n");
-            Console.ReadLine();
         }
     }
 }
